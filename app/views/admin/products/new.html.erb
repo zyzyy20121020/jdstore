@@ -1,0 +1,26 @@
+<div class="col-md-8 col-md-offset-4">
+    <h2>新增product</h2>
+
+    <hr>
+    <%= simple_form_for [:admin, @product] do |f| %>
+
+    商品名称
+    <%= f.input :title %>
+    <br>
+    商品描述
+    <br>
+    <%= f.input :description %>
+    <br>
+    价格
+    <br>
+    <%= f.input :price %>
+    <br>
+    库存
+    <br>
+    <%= f.input :quantity %>
+    <br>
+
+    <%= f.submit "Submit", :disable_with => 'Submiting...' %>
+    <% end %>
+
+</div>
