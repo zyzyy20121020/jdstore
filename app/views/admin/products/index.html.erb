@@ -9,6 +9,7 @@
     <tr>
 
       <td>商品名称</td>
+      <td>商品图片</td>
       <td>商品描述</td>
       <td>价格</td>
       <td>库存</td>
@@ -21,6 +22,9 @@
   <tr>
     <td>
       <%= link_to(product.title, admin_product_path(product)) %>
+    </td>
+    <td>
+      <%= product.image %>
     </td>
     <td>
       <%= product.description %>
