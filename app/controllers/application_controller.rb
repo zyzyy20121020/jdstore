@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
 
   def admin_required
     if !current_user.admin?
-      flash[:alert] = 'You are not admin'
+      redirect_to "/", flash[:alert] = 'You are not admin'
       redirect_to root_path
     end
   end
