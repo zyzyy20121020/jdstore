@@ -9,10 +9,15 @@
       <%= f.input :title %>
     </div>
     <br>
-    商品图片
-    <br>
+
+
+    <% if @product.image.present? %>
+      <span>目前商品图</span>  <br>
+      <%= image_tag(@product.image.thumb.url) %>
+    <% end %>    
+
     <div class="group">
-      <%= f.input :image %>
+      <%= f.input :image, as: :file %>
     </div>
     <br>
     商品描述
