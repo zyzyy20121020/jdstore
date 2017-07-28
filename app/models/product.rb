@@ -1,3 +1,3 @@
 class Product < ApplicationRecord
-  mount_column :image, ImageUploader
+  mount_uploader :image, ImageUploader
 end
