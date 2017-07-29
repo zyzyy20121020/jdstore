@@ -1,7 +1,7 @@
-class Order < ApplicationRecord\
+class Order < ApplicationRecord
   before_create :generate_token
 
-  belongs_to :users
+  belongs_to :user
   validates :billing_name, presence: true
   validates :billing_address, presence: true
   validates :shipping_name, presence: true
