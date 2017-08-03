@@ -1,5 +1,5 @@
 module CartsHelper
-  # def render_cart_total_price(cart)
+  def render_cart_total_price(cart)
   #   sum = 0
   #   cart.cart_items.each do |cart_item|
   #     if cart_item.product.present?
@@ -7,6 +7,7 @@ module CartsHelper
   #     end
   #   end
   #   sum
-  # end
   cart.total_price
+  end
+
 end
