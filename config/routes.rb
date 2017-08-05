@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     resources :products
   end
 
+  resources :orders
+
   resources :carts do
     collection do
       delete :clean
